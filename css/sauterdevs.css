@@ -262,7 +262,7 @@ a:focus {
 
 .content-section {
     padding-top: 100px;
-    height: 100%;
+    min-height: 100%;
 }
 
 .location-section {
@@ -278,7 +278,7 @@ a:focus {
 }
 
 .schedule-section {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   padding: 50px 0;
   color: #000;
