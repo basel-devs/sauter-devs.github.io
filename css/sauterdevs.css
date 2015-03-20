@@ -260,6 +260,19 @@ a:focus {
     }
 }
 
+.concept-section li {
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+@media(min-width:768px) {
+.concept-section li {
+  font-size: 40px;
+  margin-top: 40px;
+}
+}
+
+
 .content-section {
     padding-top: 100px;
     min-height: 100%;
