@@ -308,8 +308,23 @@ a:focus {
   padding: 40px 0;
 }
 
-h2.scheduled-time {
+.schedule-entry {
+  -moz-border-radius: 15px 10px / 10px 15px;
+  border-radius: 15px 10px / 10px 15px; 
+  background-color: #fc0;
+  padding: 4px;
+}
+
+.schedule-entry > .schedule-column {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
   vertical-align: middle;
+}
+
+.schedule-column > h2 {
+  vertical-align: middle;
+  margin: 0 0 0 0;
 }
 
 .vertically-centered {
@@ -325,6 +340,7 @@ h2.scheduled-time {
 .col-xs-right-viewport {
   right: 2.33333333%;
 }
+
 
 #map {
     width: 100%;
