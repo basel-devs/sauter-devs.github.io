@@ -189,7 +189,7 @@ a:focus {
 .btn-circle {
     width: 70px;
     height: 70px;
-    margin-top: 15px;
+    margin-top: 30px;
     padding: 7px 16px;
     border: 2px solid #fff;
     border-radius: 100%!important;
@@ -263,6 +263,7 @@ a:focus {
 .concept-section li {
     font-size: 25px;
     margin-top: 25px;
+    list-style-type: none; 
 }
 
 @media(min-width:768px) {
@@ -304,7 +305,7 @@ a:focus {
   -o-background-size: cover;
 }
 
-.schedule-row {
+.padded-row {
   padding: 40px 0;
 }
 
