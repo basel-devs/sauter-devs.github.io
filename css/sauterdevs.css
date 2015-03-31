@@ -266,10 +266,10 @@ a:focus {
 }
 
 @media(min-width:768px) {
-.concept-section li {
-  font-size: 40px;
-  margin-top: 40px;
-}
+  .concept-section li {
+    font-size: 40px;
+    margin-top: 40px;
+  }
 }
 
 
@@ -291,9 +291,10 @@ a:focus {
 }
 
 .schedule-section {
+  padding: 50px 0;
+  position:relative;
   min-height: 100%;
   width: 100%;
-  padding: 50px 0;
   color: #000;
   background: url(../img/schedule-001-cpp17.jpg) no-repeat center center scroll;
   background-color: #000;
@@ -304,7 +305,25 @@ a:focus {
 }
 
 .schedule-row {
-  margin-top: 50px;
+  padding: 40px 0;
+}
+
+h2.scheduled-time {
+  vertical-align: middle;
+}
+
+.vertically-centered {
+  position: absolute;
+  margin: 0 0 0 0;
+  top: 50%;
+}
+
+.col-xs-left-viewport {
+  left: 2.33333333%;
+}
+
+.col-xs-right-viewport {
+  right: 2.33333333%;
 }
 
 #map {
@@ -337,6 +356,7 @@ a:focus {
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     white-space: normal;
+    color: #fc0;
 }
 
 .btn-default {
