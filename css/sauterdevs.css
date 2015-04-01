@@ -316,6 +316,17 @@ a:focus {
   padding: 4px;
 }
 
+.schedule-separator {
+  color: #fff;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
 .schedule-entry > .schedule-column {
   display: inline-block;
   margin-right: 10px;
