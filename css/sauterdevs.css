@@ -319,7 +319,6 @@ a:focus {
 .schedule-separator {
   color: #fff;
   vertical-align: middle;
-  white-space: nowrap;
 
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
