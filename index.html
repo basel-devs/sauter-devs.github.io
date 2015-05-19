@@ -134,22 +134,21 @@
    </section>
 
   <!-- Schedule Section -->
-
   <section id="schedule" class="container schedule-section">
 
-      <div class="vertically-centered text-left col-xs-0 col-xs-left-viewport">
-        <a class="btn">
-          <i class="fa fa-5x fa-arrow-circle-left"></i>
-        </a>
-      </div>
+    <div id="prev-schedule" class="vertically-centered text-left col-xs-0 col-xs-left-viewport">
+      <a class="btn">
+        <i class="fa fa-5x fa-arrow-circle-left"></i>
+      </a>
+    </div>
 
-      <!--<div class="vertically-centered text-right col-xs-0 col-xs-right-viewport">
-        <a class="btn">
-          <i class="fa fa-5x fa-arrow-circle-right"></i>
-        </a>
-      </div>-->
+    <div id="next-schedule" class="vertically-centered text-right col-xs-0 col-xs-right-viewport">
+      <a class="btn">
+        <i class="fa fa-5x fa-arrow-circle-right"></i>
+      </a>
+    </div>
 
-    <!--<div id="schedule-1">
+    <div class="schedule-slide-in">
 
       <div class="row padded-row text-center" >
         <div class="col-lg-8 col-lg-offset-2">
@@ -198,10 +197,10 @@
         </div>
       </div>
 
-    </div> -->
+    </div>
 
 
-    <div id="schedule-2">
+    <div class="schedule-slide-in">
       <div class="row padded-row text-center" >
         <div class="col-lg-8 col-lg-offset-2">
           <h1><i class="fa fa-calendar-o"></i> Schedule for Tuesday 19. May 2015</h1>
@@ -235,6 +234,107 @@
           </div>
         </div>
       </div>
+      <div class="row padded-row text-left">
+        <div class="col-xs-8 col-xs-offset-2 text-center">
+          <div class="schedule-entry">
+            <div class="schedule-column">
+              <i class="fa fa-3x fa-keyboard-o"></i>
+              <h2>18h00 - 23h00</h2>
+            </div>
+            <div class="schedule-column">
+              <h4>Coworking session with char[128] pause, music &amp; pizza</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="schedule-slide-in">
+      <div class="row padded-row text-center" >
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1><i class="fa fa-calendar-o"></i> Schedule for Tuesday 19. May 2015</h1>
+        </div>
+      </div>
+
+      <div class="row padded-row text-left">
+        <div class="col-xs-8 col-xs-offset-2 text-center">
+          <div class="schedule-entry">
+            <div class="schedule-column">
+              <i class="fa fa-3x fa-graduation-cap"></i>
+              <h2>17h00 - 17h45</h2>
+            </div>
+            <div class="schedule-column">
+              <h4><strong>C++ everywhere &amp; in the Browser</strong> by <dfn>Damien Buhl</dfn></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-xs-8 col-xs-offset-2">
+          <div class="schedule-separator">
+              <i class="fa fa-circle-o"></i>
+              <i class="fa fa-circle-o"></i>
+              <i class="fa fa-circle-o"></i>
+              Small break with nice drinks
+              <i class="fa fa-circle-o"></i>
+              <i class="fa fa-circle-o"></i>
+              <i class="fa fa-circle-o"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row padded-row text-left">
+        <div class="col-xs-8 col-xs-offset-2 text-center">
+          <div class="schedule-entry">
+            <div class="schedule-column">
+              <i class="fa fa-3x fa-keyboard-o"></i>
+              <h2>18h00 - 23h00</h2>
+            </div>
+            <div class="schedule-column">
+              <h4>Coworking session with char[128] pause, music &amp; pizza</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="schedule-slide-in">
+      <div class="row padded-row text-center" >
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1><i class="fa fa-calendar-o"></i> Schedule for Thursday 28. May 2015</h1>
+        </div>
+      </div>
+
+      <div class="row padded-row text-left">
+        <div class="col-xs-8 col-xs-offset-2 text-center">
+          <div class="schedule-entry">
+            <div class="schedule-column">
+              <i class="fa fa-3x fa-rocket"></i>
+              <h2>17h00 - 17h45</h2>
+            </div>
+            <div class="schedule-column">
+              <h4><strong>Small programming turnament !</strong> by <dfn>The Recruiters</dfn></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-xs-8 col-xs-offset-2">
+          <div class="schedule-separator">
+              <i class="fa fa-circle-o"></i>
+              <i class="fa fa-circle-o"></i>
+              <i class="fa fa-circle-o"></i>
+              Small break with nice drinks
+              <i class="fa fa-circle-o"></i>
+              <i class="fa fa-circle-o"></i>
+              <i class="fa fa-circle-o"></i>
+          </div>
+        </div>
+      </div>
+
       <div class="row padded-row text-left">
         <div class="col-xs-8 col-xs-offset-2 text-center">
           <div class="schedule-entry">
@@ -288,6 +388,67 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/sauterdevs.js"></script>
+
+
+  <script type="text/javascript">
+
+    $( document ).ready( function() {
+      number_of_schedule = $( ".schedule-slide-in" ).size();
+      current_schedule = $( ".schedule-slide-in" ).size() - 1;
+
+      var show_buttons = function() {
+        $("#prev-schedule").show(); 
+        $("#next-schedule").show();
+
+        if (current_schedule == 0) {
+          $("#prev-schedule").hide(); 
+        }
+
+        if (current_schedule >= (number_of_schedule - 1) ) {
+          $("#next-schedule").hide();
+        }
+      };
+
+
+
+      var hide_current_schedule = function() {
+        var current_schedule_dom = $($( ".schedule-slide-in" )[current_schedule]);
+        current_schedule_dom.hide();
+
+      };
+
+      var show_current_schedule = function() {
+        var current_schedule_dom = $($( ".schedule-slide-in" )[current_schedule]);
+        current_schedule_dom.show();
+        show_buttons();
+      };
+
+      var previous_schedule = function() {
+
+        if (current_schedule > 0) {
+          hide_current_schedule();
+          --current_schedule;
+          show_current_schedule();
+        }
+
+      };
+   
+      var next_schedule = function() {
+
+        if (current_schedule < (number_of_schedule - 1) ) {
+          hide_current_schedule();
+          ++current_schedule;
+          show_current_schedule();
+        }
+
+      };
+
+      show_current_schedule();
+      $("#prev-schedule").click(previous_schedule);
+      $("#next-schedule").click(next_schedule);
+
+    });
+  </script>
 
 </body>
 
