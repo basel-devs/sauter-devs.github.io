@@ -1,1 +1,0 @@
-/opt/softwares/emsdk_portable/emscripten/master/em++  -fPIC -g  --bind    -shared -Wl,-soname,libalarm-renderer.js -o libalarm-renderer.js @CMakeFiles/alarm-renderer.dir/objects1.rsp -lSDL -lSDL_gfx -lSDL_ttf 
