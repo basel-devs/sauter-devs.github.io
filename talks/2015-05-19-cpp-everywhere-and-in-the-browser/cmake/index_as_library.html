@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+  <body>
+    <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas> 
+
+    <script>
+      var Module = {
+        canvas : document.getElementById('canvas')
+      };
+
+    </script>
+
+    <script src="build/libalarm-renderer.js"></script>
+
+    <script>
+      var alarms = Module;
+
+      var screen_surface = alarms.create_rendering_surface(400, 200);
+
+      alarm_widget = new alarms.AlarmWidget(screen_surface, alarms.from_file(""));
+
+      alarm_widget.draw();
+
+    </script>
+
+  </body>
+</html>

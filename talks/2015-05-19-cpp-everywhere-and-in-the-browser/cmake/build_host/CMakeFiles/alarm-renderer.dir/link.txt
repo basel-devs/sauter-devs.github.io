@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/alarm-renderer.dir/src/main.cpp.o  -o alarm-renderer -rdynamic -lSDL -lSDL_gfx -lSDL_ttf 

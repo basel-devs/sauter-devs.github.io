@@ -1,0 +1,1 @@
+/home/daminetreg/workspace/experiments/emscripten/presentation_may2015/cmake/build/CMakeFiles/alarm-renderer.dir
