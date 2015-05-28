@@ -1,0 +1,67 @@
+On Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz Ubuntu 14.04.2 LTS
+
+Results are : 
+
+bauernmi
+========
+C++ (g++-4.8.2)
+
+found at 86800
+
+real    0m0.006s
+user    0m0.005s
+sys     0m0.000s
+
+frieddan
+========
+C++ (g++-4.8.2)
+
+the Pi test
+usage: call ./a.out file_to_read  pattern_to_search
+
+position of Pattern 31415926535897932385 is: 86800
+
+real    0m0.002s
+user    0m0.000s
+sys     0m0.002s
+
+rocatom
+=======
+(Mono C# VM)
+
+pi was found at index 86800
+am I hired ?
+
+real    0m0.032s
+user    0m0.024s
+sys     0m0.008s
+
+
+wiedepat
+========
+C++ (g++-4.8.2)
+
+Searching for rounded PI:31415926535897932385
+Found PI at position n=86801
+
+real    0m0.005s
+user    0m0.003s
+sys     0m0.002s
+
+buhldam
+=======
+C++ (g++-4.8.2)
+
+String is gigantic : 100001, pi is at 86800
+
+real    0m0.001s
+user    0m0.000s
+sys     0m0.001s
+
+rothren
+=======
+
+idx:86800
+real    0m0.002s
+user    0m0.002s
+sys     0m0.000s

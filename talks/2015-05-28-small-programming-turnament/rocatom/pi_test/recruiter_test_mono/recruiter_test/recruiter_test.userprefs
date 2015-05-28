@@ -1,0 +1,30 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="recruiter_test/Program.cs">
+    <Files>
+      <File FileName="recruiter_test/Program.cs" Line="13" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/daminetreg/Documents/sauter/mini-competency-test-electronic/rocatom/pi_test/recruiter_test_mono/recruiter_test/recruiter_test/Program.cs" line="30" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.recruiter__test>
+    <MonoDevelop.Ide.CustomExecutionModes>
+      <Data Name="Mono Soft Debugger (Custom)" Id="f249ce84-d7fe-4c41-9cd0-a7bbfe2885b2" ModeId="Mono Soft Debugger">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value WorkingDirectory="/home/daminetreg/Documents/sauter/mini-competency-test-electronic" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+          <Item Key="MonoDevelop.Ide.Execution.MonoExecutionCustomizer">
+            <Value DebugMode="True" ctype="MonoExecutionParameters" />
+          </Item>
+        </CommandData>
+      </Data>
+    </MonoDevelop.Ide.CustomExecutionModes>
+  </MonoDevelop.Ide.ItemProperties.recruiter__test>
+</Properties>
