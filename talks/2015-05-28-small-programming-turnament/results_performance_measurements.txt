@@ -1,6 +1,7 @@
 On Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz Ubuntu 14.04.2 LTS
 
-Results are : 
+Results are for 100 000 chars files : 
+*************************************
 
 bauernmi
 ========
@@ -60,8 +61,79 @@ sys     0m0.001s
 
 rothren
 =======
+C (gcc-4.8.2)
 
 idx:86800
 real    0m0.002s
 user    0m0.002s
 sys     0m0.000s
+
+
+Results are for 200mb files : 
+*****************************
+
+bauernmi
+========
+C++ (g++-4.8.2)
+
+found at 429377870
+
+real    0m3.834s
+user    0m3.684s
+sys     0m0.144s
+
+frieddan
+========
+C++ (g++-4.8.2)
+
+the Pi test
+usage: call frieddan/pi_test/a.out file_to_read  pattern_to_search
+
+position of Pattern 31415926535897932385 is: 232287852
+
+real    0m0.321s
+user    0m0.251s
+sys     0m0.072s
+
+rocatom
+=======
+(Mono C# VM)
+
+pi was found at index 224540209
+am I hired ?
+
+real    0m6.753s
+user    0m6.613s
+sys     0m0.113s
+
+wiedepat
+========
+C++ (g++-4.8.2)
+
+piDump.size() 233211553
+Searching for rounded PI:31415926535897932385
+Found PI at position n=233198353
+
+real    0m2.287s
+user    0m2.220s
+sys     0m0.064s
+
+
+buhldam
+=======
+C++ (g++-4.8.2)
+
+String is gigantic : 233211553, pi is at 233198352
+
+real    0m0.224s
+user    0m0.184s
+sys     0m0.040s
+
+rothren
+=======
+C (gcc-4.8.2)
+
+idx:233198352
+real    0m3.513s
+user    0m3.485s
+sys     0m0.024s
