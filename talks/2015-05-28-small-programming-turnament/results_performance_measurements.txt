@@ -1,139 +1,163 @@
 On Intel(R) Core(TM) i7-4770HQ CPU @ 2.20GHz Ubuntu 14.04.2 LTS
 
-Results are for 100 000 chars files : 
-*************************************
-
-bauernmi
-========
-C++ (g++-4.8.2)
-
-found at 86800
-
-real    0m0.006s
-user    0m0.005s
-sys     0m0.000s
-
-frieddan
-========
-C++ (g++-4.8.2)
-
-the Pi test
-usage: call ./a.out file_to_read  pattern_to_search
-
-position of Pattern 31415926535897932385 is: 86800
-
-real    0m0.002s
-user    0m0.000s
-sys     0m0.002s
-
-rocatom
-=======
-(Mono C# VM)
-
-pi was found at index 86800
-am I hired ?
-
-real    0m0.032s
-user    0m0.024s
-sys     0m0.008s
-
-
-wiedepat
-========
-C++ (g++-4.8.2)
-
-Searching for rounded PI:31415926535897932385
-Found PI at position n=86801
-
-real    0m0.005s
-user    0m0.003s
-sys     0m0.002s
-
-buhldam
-=======
-C++ (g++-4.8.2)
-
-String is gigantic : 100001, pi is at 86800
-
-real    0m0.001s
-user    0m0.000s
-sys     0m0.001s
-
-rothren
-=======
-C (gcc-4.8.2)
-
-idx:86800
-real    0m0.002s
-user    0m0.002s
-sys     0m0.000s
-
-
 Results are for 200mb files : 
 *****************************
 
-bauernmi
-========
-C++ (g++-4.8.2)
+  Ranking by speed : 
+  ==================
+    1. buhldam - real 0m0.224s
+    2. frieddan - real  0m0.321s
+    3. wiedepat - real 0m2.287s
+    4. rothren -  real    0m3.513s
+    5. bauernmi -  real    0m3.834s (position is strange however)
+    6. rocatom - real    0m6.753s
 
-found at 429377870
+  Ranking by RAM usage :
+  ======================
 
-real    0m3.834s
-user    0m3.684s
-sys     0m0.144s
-
-frieddan
-========
-C++ (g++-4.8.2)
-
-the Pi test
-usage: call frieddan/pi_test/a.out file_to_read  pattern_to_search
-
-position of Pattern 31415926535897932385 is: 232287852
-
-real    0m0.321s
-user    0m0.251s
-sys     0m0.072s
-
-rocatom
-=======
-(Mono C# VM)
-
-pi was found at index 224540209
-am I hired ?
-
-real    0m6.753s
-user    0m6.613s
-sys     0m0.113s
-
-wiedepat
-========
-C++ (g++-4.8.2)
-
-piDump.size() 233211553
-Searching for rounded PI:31415926535897932385
-Found PI at position n=233198353
-
-real    0m2.287s
-user    0m2.220s
-sys     0m0.064s
+    1. rothren - 568 Bytes
+    2. rocatom - 13.2 Megabytes
+    3. wiedepat - 222.5 Megabytes
+    4. buhldam  - 222.5 Megabytes
+    5. frieddan - 384.1 Megabytes
+    6. bauernmi - 1.5 Gigabytes
 
 
-buhldam
-=======
-C++ (g++-4.8.2)
 
-String is gigantic : 233211553, pi is at 233198352
+  bauernmi
+  ========
+  C++ (g++-4.8.2)
 
-real    0m0.224s
-user    0m0.184s
-sys     0m0.040s
+  found at 429377870
 
-rothren
-=======
-C (gcc-4.8.2)
+  real    0m3.834s
+  user    0m3.684s
+  sys     0m0.144s
 
-idx:233198352
-real    0m3.513s
-user    0m3.485s
-sys     0m0.024s
+  frieddan
+  ========
+  C++ (g++-4.8.2)
+
+  the Pi test
+  usage: call frieddan/pi_test/a.out file_to_read  pattern_to_search
+
+  position of Pattern 31415926535897932385 is: 232287852
+
+  real    0m0.321s
+  user    0m0.251s
+  sys     0m0.072s
+
+  rocatom
+  =======
+  (Mono C# VM)
+
+  pi was found at index 224540209
+  am I hired ?
+
+  real    0m6.753s
+  user    0m6.613s
+  sys     0m0.113s
+
+  wiedepat
+  ========
+  C++ (g++-4.8.2)
+
+  piDump.size() 233211553
+  Searching for rounded PI:31415926535897932385
+  Found PI at position n=233198353
+
+  real    0m2.287s
+  user    0m2.220s
+  sys     0m0.064s
+
+
+  buhldam
+  =======
+  C++ (g++-4.8.2)
+
+  String is gigantic : 233211553, pi is at 233198352
+
+  real    0m0.224s
+  user    0m0.184s
+  sys     0m0.040s
+
+  rothren
+  =======
+  C (gcc-4.8.2)
+
+  idx:233198352
+  real    0m3.513s
+  user    0m3.485s
+  sys     0m0.024s
+
+
+Results are for 100 000 chars files : 
+*************************************
+
+  bauernmi
+  ========
+  C++ (g++-4.8.2)
+
+  found at 86800
+
+  real    0m0.006s
+  user    0m0.005s
+  sys     0m0.000s
+
+  frieddan
+  ========
+  C++ (g++-4.8.2)
+
+  the Pi test
+  usage: call ./a.out file_to_read  pattern_to_search
+
+  position of Pattern 31415926535897932385 is: 86800
+
+  real    0m0.002s
+  user    0m0.000s
+  sys     0m0.002s
+
+  rocatom
+  =======
+  (Mono C# VM)
+
+  pi was found at index 86800
+  am I hired ?
+
+  real    0m0.032s
+  user    0m0.024s
+  sys     0m0.008s
+
+
+  wiedepat
+  ========
+  C++ (g++-4.8.2)
+
+  Searching for rounded PI:31415926535897932385
+  Found PI at position n=86801
+
+  real    0m0.005s
+  user    0m0.003s
+  sys     0m0.002s
+
+  buhldam
+  =======
+  C++ (g++-4.8.2)
+
+  String is gigantic : 100001, pi is at 86800
+
+  real    0m0.001s
+  user    0m0.000s
+  sys     0m0.001s
+
+  rothren
+  =======
+  C (gcc-4.8.2)
+
+  idx:86800
+  real    0m0.002s
+  user    0m0.002s
+  sys     0m0.000s
+
+
+
